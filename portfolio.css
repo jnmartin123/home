@@ -1,0 +1,285 @@
+/*selection bar*/
+*{
+    margin:0;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+section{
+  height: 100vh;
+  width: 100vw;
+}
+
+body{
+    color:white;
+   width: fit-content;
+   height: 100%;
+}
+
+h1{
+    padding-right:50px;
+ 
+    
+}
+.top-bar{
+    background-color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    position:fixed;
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    justify-content:first baseline; 
+    padding-top:10px;
+  
+
+
+  
+}
+
+#home,
+#skill,
+#aboutme,
+#project,
+#contact{ 
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly; 
+    text-decoration: none;
+   
+}
+
+
+
+a[href="#home"]:hover{
+color: rgb(85, 84, 84);
+}
+a[href="#home"]:active{
+    color: rgb(195, 192, 192);
+}
+a[href="#home"]{
+   display: inline-block;
+   font-size:20px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   margin-right: 20px;
+   color: rgb(8, 8, 8);
+}
+
+
+
+
+
+a[href="#skill"]:hover{
+    color: rgb(85, 84, 84);
+    }
+    
+a[href="#skill"]:active{
+        color: rgb(195, 192, 192);
+    }
+a[href="#skill"]{
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(8, 8, 8);
+}
+
+
+a[href="#aboutme"]:hover{
+    color: rgb(85, 84, 84);
+    }
+    
+a[href="#aboutme"]:active{
+        color: rgb(195, 192, 192);
+    }
+a[href="#aboutme"]{
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(8, 8, 8);
+}
+
+
+
+
+a[href="#project"]:hover{
+    color: rgb(85, 84, 84);
+    }
+    
+a[href="#project"]:active{
+        color: rgb(195, 192, 192);
+    }
+a[href="#project"]{
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(8, 8, 8);
+}
+
+
+
+
+
+a[href="#contact"]:hover{
+    color: rgb(85, 84, 84);
+    }
+    
+a[href="#contact"]:active{
+        color: rgb(195, 192, 192);
+    }
+a[href="#contact"]{
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(8, 8, 8);
+}
+
+
+
+
+
+
+
+
+.headers{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly; 
+    text-decoration: none;
+}
+
+    
+    
+
+h1{
+    color: rgb(31, 126, 114);
+    font-family: sans-serif;
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*home section*/
+#home{
+    border:none;
+    color: rgb(8, 8, 8);
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width:100%;
+   height:100vh;
+   display:flex;
+   align-items:center;
+  
+   gap:50%;
+  
+   
+}
+
+.home-section2{
+
+   text-align: center;
+  
+}
+
+
+#home:hover{
+    color: rgb(49, 141, 121);
+}
+
+
+.home-section2{
+    background-color: rgb(255, 255, 255);
+   
+   
+}
+
+.greeting{
+    font-size:35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    color: rgb(2,2,55);
+    
+}
+
+.name{
+    font-size:90px;
+    font-family: sans-serif;
+    
+    color: rgb(2,2,55);
+    }
+
+
+.me{
+    color: rgb(49,141,121);
+    font-size:90px;
+    font-family: sans-serif;
+    
+    
+
+
+}
+
+
+
+.profesion{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 20px;
+ 
+   color:rgb(2,2,55);
+  
+   
+}
+
+
+
+
+/*about me section*/
+.aboutmesection{
+    background-color: rgb(49, 141, 121);
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:50%;
+    
+}
+
+.aboutmetitle{
+    color:rgb(2, 2, 55);
+    font-size:40px;
+    text-align: center;
+    padding-top:100px;
+    margin-bottom:-200px;
+}
+    
+
+.text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    
+}
+
+
