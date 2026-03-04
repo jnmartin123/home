@@ -1,267 +1,338 @@
-/*selection bar*/
-*{
-    margin:0;
-}
-
-html{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
     scroll-behavior: smooth;
-    height: 100%;
-}
-section{
-  height: 100vh;
-  width: 100vw;
-}
-
-body{
-    color:white;
-   width: fit-content;
-   height: 100%;
-}
-
-h1{
-    padding-right:50px;
- 
-    
-}
-.top-bar{
-    background-color:rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    position:fixed;
-    display: flex;
-    flex-direction:row;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    color: #020237;
+  }
+  
+  /* HEADER */
+  .top-bar {
+    position: fixed;
+    top: 0;
     width: 100%;
-    justify-content:first baseline; 
-    padding-top:10px;
-  
-
-
-  
-}
-
-#home,
-#skill,
-#aboutme,
-#project,
-#contact{ 
     display: flex;
-    flex-direction:row;
-    justify-content:space-evenly; 
-    text-decoration: none;
-   
-}
-
-
-
-a[href="https://jnmartin123.github.io/home/portfolio.html"]:hover{
-    color: rgb(85, 84, 84);
-    }
-    a[href="https://jnmartin123.github.io/home/portfolio.html"]:active{
-        color: rgb(195, 192, 192);
-    }
-    a[href="https://jnmartin123.github.io/home/portfolio.html"]{
-       display: inline-block;
-       font-size:20px;
-       font-family: Arial, Helvetica, sans-serif;
-       text-decoration: none;
-       margin-right: 20px;
-       color: rgb(8, 8, 8);
-    }
-
-
-    a[href="https://jnmartin123.github.io/skills/skills.html"]:hover{
-        color: rgb(85, 84, 84);
-        }
-        
-    a[href="https://jnmartin123.github.io/skills/skills.html"]:active{
-            color: rgb(195, 192, 192);
-        }
-    a[href="https://jnmartin123.github.io/skills/skills.html"]{
-        display: inline-block;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-        margin-right: 20px;
-        color: rgb(8, 8, 8);
-    }
-
-
-
-    a[href="https://jnmartin123.github.io/aboutme/aboutme.html"]:hover{
-        color: rgb(85, 84, 84);
-        }
-        
-    a[href="https://jnmartin123.github.io/aboutme/aboutme.html"]:active{
-            color: rgb(195, 192, 192);
-        }
-    a[href="https://jnmartin123.github.io/aboutme/aboutme.html"]{
-        display: inline-block;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-        margin-right: 20px;
-        color: rgb(8, 8, 8);
-    }
-    
-    
-    
-    
-    a[href="https://jnmartin123.github.io/projects/projects.html "]:hover{
-        color: rgb(85, 84, 84);
-        }
-        
-    a[href="https://jnmartin123.github.io/projects/projects.html "]:active{
-            color: rgb(195, 192, 192);
-        }
-    a[href=" https://jnmartin123.github.io/projects/projects.html"]{
-        display: inline-block;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-        margin-right: 20px;
-        color: rgb(8, 8, 8);
-    }
-    
-    
-    
-    
-    
-    a[href="https://jnmartin123.github.io/contacts/contacts.html"]:hover{
-        color: rgb(85, 84, 84);
-        }
-        
-    a[href="https://jnmartin123.github.io/contacts/contacts.html"]:active{
-            color: rgb(195, 192, 192);
-        }
-    a[href="https://jnmartin123.github.io/contacts/contacts.html"]{
-        display: inline-block;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-        margin-right: 20px;
-        color: rgb(8, 8, 8);
-    }
-
-
-.headers{
-    display: flex;
-    flex-direction:row;
-    justify-content:space-evenly; 
-    text-decoration: none;
-}
-
-    
-    
-
-h1{
-    color: rgb(31, 126, 114);
-    font-family: sans-serif;
-    font-size: 60px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*home section*/
-#home{
-    border:none;
-    color: rgb(8, 8, 8);
-    background-color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
-   display:flex;
-   align-items:center;
-}
-
-
-
-#home:hover{
-    color: rgb(49, 141, 121);
-}
-
-
-.home-section2{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-     
-}
-
-.greeting{
-    font-size:35px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    color: rgb(2,2,55);
-    
-}
-
-.name{
-    font-size:90px;
-    font-family: sans-serif;
-    
-    color: rgb(2,2,55);
-    }
-
-
-.me{
-    color: rgb(49,141,121);
-    font-size:90px;
-    font-family: sans-serif;
-    
-    
-
-
-}
-
-
-
-.profesion{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 20px;
- 
-   color:rgb(2,2,55);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
   
-   
-}
-
-
-
-
-/*about me section*/
-.aboutmesection{
-    background-color: rgb(49, 141, 121);
-    width:100%;
-    height:100vh;
-    display:flex;
-    align-items:center;
+  .top-bar h1 {
+    color: #42b57d;
+    font-size: 40px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #080808;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navigation a:hover {
+    color: #28DD79;
+  }
+  
+  /* Make every section full screen */
+  section {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 80px; /* space for header */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap:50%;
-    
-}
-
-.aboutmetitle{
-    color:rgb(2, 2, 55);
-    font-size:40px;
+    align-items: center;
+  }
+  
+  /* Home Section */
+  .home-content .greeting {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .home-content .name-intro {
+    font-size: 90px;
+    font-weight: bold;
+    color: #020237;
+  }
+  
+  .home-content .me {
+    color: #42b57d;
+  }
+  
+  .home-content .profession {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  
+  /* Skills Section */
+  #skills {
+    background-color: #020237;
+    color: #fff;
     text-align: center;
-    padding-top:100px;
-    margin-bottom:-200px;
-}
-    
-
-.text{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .section-title {
+    font-size: 50px;
+    color: #28DD79;
+    margin-bottom: 50px;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 80px;
+  }
+  
+  .skill-card {
+    background-color: #020237;
+    border: 2px solid #28DD79;
+    color: #28DD79;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .skill-card:hover {
+    background-color: #28DD79;
+    color: #020237;
+    transform: scale(1.1);
+  }
+  
+  .work-process-title {
+    font-size: 25px;
+    color: #28DD79;
+    margin-bottom: 30px;
+  }
+  
+  .work-process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .process-step {
+    width: 100px;
+    height: 50px;
+    border: 2px solid #28DD79;
+    color: #28DD79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .process-step:hover {
+    background-color: #28DD79;
+    color: #020237;
+    transform: scale(1.1);
+  }
+  
+  /* About Me Section */
+  #aboutme {
+    background-color: #ffffff;
+    color: #020237;
+    text-align: center;
+  }
+  
+  .about-section {
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .about-text {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  
+  /* ============================= */
+  /*        PROJECTS SECTION       */
+  /* ============================= */
+  
+  #projects {
+    background: linear-gradient(135deg, #e6e6e6, #ffffff);
+    text-align: center;
+    padding: 120px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  #projects .section-title {
+    font-size: 55px;
+    color: #1f7e72;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Layout */
+  .project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 20px;
+  }
+  
+  /* Individual card */
+  .project-card {
+    width: 300px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid #1f7e72;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transform: translateY(40px);
+    opacity: 0;
+    animation: slideUp 0.8s ease forwards;
+  }
+  
+  /* Stagger animation */
+  .project-card:nth-child(1) { animation-delay: 0.1s; }
+  .project-card:nth-child(2) { animation-delay: 0.25s; }
+  .project-card:nth-child(3) { animation-delay: 0.4s; }
+  
+  /* Title */
+  .project-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f1f1f;
+    margin-bottom: 12px;
+  }
+  
+  /* Icons */
+  .project-icon {
+    font-size: 40px;
+    color: #1f7e72;
+    margin-bottom: 15px;
+  }
+  
+  /* Image */
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card img:hover {
+    transform: scale(1.06);
+  }
+  
+  /* Button */
+  .project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #1f7e72;
     color: white;
-    
-}
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .project-btn:hover {
+    background: #ffffff;
+    color: #1f7e72;
+    border: 2px solid #1f7e72;
+    transform: scale(1.05);
+  }
+  
+  /* Slide animation */
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    #projects {
+      height: auto;
+      padding-bottom: 120px;
+    }
+  
+    .project-card {
+      width: 90%;
+    }
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #ffffff;
+    color: #020237;
+    text-align: center;
+  }
+  
+  .contact-section {
+    max-width: 700px;
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  
+  .contact-section a {
+    color: #42b57d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-section a:hover {
+    color: #28DD79;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .home-content .name-intro {
+        font-size: 50px;
+    }
+    .home-content .greeting {
+        font-size: 25px;
+    }
+    .home-content .profession {
+        font-size: 18px;
+    }
+  
+    .section-title {
+        font-size: 40px;
+    }
+  
+    .skill-card, .process-step, .project-card img {
+        width: 80%;
+        font-size: 18px;
+    }
+  
+    .about-text, .contact-section {
+        font-size: 18px;
+    }
+  }
+  
+
 
 
